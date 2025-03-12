@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram bot 'OSM Bot'
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/usr/local/bin/OSM_Bot/
+ExecStart=/usr/local/bin/OSM_Bot/venv/bin/python3 -m bot
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
