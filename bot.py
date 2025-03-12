@@ -53,7 +53,7 @@ async def handle_location(message: types.Message):
 async def show_map(callback_query: types.CallbackQuery):
     unique_id = random.randint(1000, 9999)  # Unique ID for the map
     await bot.send_message(callback_query.from_user.id,
-                           f"Вот ваша карта: http://localhost:5000/map/{unique_id}",
+                           f"Вот ваша карта: http://195.133.147.54:5000/map/{unique_id}",
                            reply_markup=get_inline_buttons())
 
 
