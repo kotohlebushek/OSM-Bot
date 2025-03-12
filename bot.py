@@ -6,7 +6,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database import add_marker_to_db, check_marker_exists, get_all_markers, increment_delete_requests, \
     delete_marker_from_db
 
-API_TOKEN = '7557459871:AAFaC0VZbnVO6Dq0UwyCR3s_tpnGCoNyNrk'
+API_TOKEN = '8110561178:AAGEUI-eDamtX7RGKu-rkBcAH1MAG2a5p5c'
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 
